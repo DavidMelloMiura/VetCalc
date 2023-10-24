@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estiloDoses.css">
+</head>
+<body>
+    <div class="content">
+    
+        <div class="mb-3 mt-3" id="medicamentos">
+        </div>
+
+
+        <h2>Calculo de Dose</h2>
+        
+        <div class="contSelect m-3">
+            <input type="text" class="form-control mb-3" id="pesoAnimal" placeholder="Peso do Animal">
+
+            <select class="form-select" name="selectMedicamentos" id="selectMedicamentos" onchange="optionSelecionado()">
+                <option value="Selecione">Selecione</option>
+            </select>
+        </div>
+
+        <div class="doseKilo" id="doseKilo">
+        </div>
+
+
+ 
+    </div>
+    <script src="doses.js"></script>
+</body>
+</html>
