@@ -5,7 +5,11 @@
     /* font-weight: 600; */
 /* } */
 
-
+.titulo {
+    font-size: 2rem;
+    color: #afafaf;
+    margin-top: 1rem;
+}
 
 .content {
     display: flex;
@@ -22,10 +26,10 @@
 
 .doseKilo {
     font-size: 1.3rem;
-    padding: 0.5rem;
-    color: white;
-    border-radius: 0.3rem;
-    background-color: #0dadc5;
+    /* padding: 0.5rem; */
+    color: #0dadc5;
+    /* border-radius: 0.3rem; */
+    /* background-color: #0dadc5; */
     /* background-color: #1a3968; */
 }
 
