@@ -1,0 +1,22 @@
+{
+    "medicamentos": [
+        {
+            "nome": "Shotapen",
+            "doseKilo": 0.1,
+            "frequencia": "E.D.A",
+            "via": "SC/IM"
+        },
+        {
+            "nome": "Agemoxi",
+            "doseKilo": 0.05,
+            "frequencia": "E.D.A",
+            "via": "SC/IM"
+        },
+        {
+            "nome": "Metronidazol",
+            "doseKilo": 3,
+            "frequencia": "BID",
+            "via": "IV"
+        }
+    ]
+}
