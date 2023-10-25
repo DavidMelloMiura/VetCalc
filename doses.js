@@ -22,6 +22,8 @@ function optionSelecionado() {
     let select = document.getElementById('selectMedicamentos');
     let optionValue = select.options[select.selectedIndex];
     let pesoAnimal = document.getElementById('pesoAnimal').value;
+    //let frequencia
+    //let via
 
     let value = 0;
     value = optionValue.value;
@@ -29,8 +31,6 @@ function optionSelecionado() {
     console.log(value);
     
     
-        
-        divDose.innerHTML = 'Vazio'
     
         divDose.innerHTML = ` Dose: ${value} ml`;
     
