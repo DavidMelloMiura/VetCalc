@@ -43,16 +43,13 @@ fetch("doses.json")
         // }
         // console.log(JSON.stringify(arrayMed));
         
-        console.log(' ========== JSON convertido para ARRAY -  Método Object.values() ==========');
+        // console.log(' ========== JSON convertido para ARRAY -  Método Object.values() ==========');
         
-        const arrayDados = Object.values(dados);
-        let dado1 = arrayDados[0][1].nome;
-        // console.log(dados.medicamentos[1].nome);
-        console.log(dado1);
+        // const arrayDados = Object.values(dados);
+        // let dado1 = arrayDados[0][1].nome;
+        // // console.log(dados.medicamentos[1].nome);
+        // console.log(dado1);
         
-        
-
-        // console.log('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$');
         // console.log(dados.medicamentos[2].via);
         
     })
@@ -77,25 +74,21 @@ function optionSelecionado() {
     value = optionValue;
     value = value * pesoAnimal;
     
-    // divDose.innerHTML = `${value} ml`;
     value ? divDose.innerHTML = `${value} ml` : divDose.innerHTML = '-'
 
     
     
     
-    
-    
-    // ##################################################
     let optionText = select.options[select.selectedIndex].text;
     // let optionText = select.options[select.selectedIndex].getAttribute('via');
     console.log("optionText = " + optionText);
 
-    console.log('----- SPLIT -----');
+    // Split
     dadosplit = optionText.split(' - ')
     let via = dadosplit[2];
     console.log(dadosplit[2]);
     let frequencia = dadosplit[3];
-    console.log('-----------------');
+    
     
     
 

@@ -17,6 +17,53 @@
             "doseKilo": 3,
             "frequencia": "BID",
             "via": "IV"
+        },
+        {
+            "nome": "Trissulfin",
+            "doseKilo": 0.15,
+            "frequencia": "BID/SID",
+            "via": "SC/IM"
+        },
+        {
+            "nome": "Enrofloxacino",
+            "doseKilo": 0.05,
+            "frequencia": "SID",
+            "via": "SC"
+        },
+        {
+            "nome": "ceftriaxona",
+            "doseKilo":	0.25,
+            "frequencia": "BID",	
+            "via": "SC,"
+        },
+        {
+            "nome": "ampicilina",
+            "doseKilo":	0.1,
+            "frequencia": "BID",
+            "via": "IV"
+        },
+        {
+            "nome": "amoxicilina + clav.",
+            "doseKilo": 0.05,
+            "frequencia": "SID",
+            "via": "SC/IM"
+        },
+        {
+            "nome": "convenia (Cão)",
+            "doseKilo":	0.1,
+            "frequencia": "A CADA 15 DIAS",	
+            "via": "SC"
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
