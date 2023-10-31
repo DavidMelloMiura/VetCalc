@@ -78,8 +78,9 @@ function optionSelecionado() {
     value = value * pesoAnimal;
     
     // divDose.innerHTML = `${value} ml`;
-
     value ? divDose.innerHTML = `${value} ml` : divDose.innerHTML = '-'
+
+    
     
     
     
@@ -107,7 +108,9 @@ function optionSelecionado() {
     // divFreq.innerHTML = frequencia;
 
     
-
+    // if (pesoAnimal) {
+    //     alert("Digite o Peso do Animal");
+    // }
 
 
 
@@ -133,5 +136,6 @@ function optionSelecionado() {
     
     
 }
+
 
 optionSelecionado();
