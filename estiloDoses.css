@@ -11,6 +11,10 @@
     margin-top: 1rem;
 }
 
+h2 {
+color: #0dadc5;
+}
+
 .content {
     display: flex;
     align-items: center;
@@ -24,7 +28,7 @@
     width: 30vw;
 }
 
-.doseKilo {
+.result {
     font-size: 1.3rem;
     /* padding: 0.5rem; */
     color: #0dadc5;
