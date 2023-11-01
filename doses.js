@@ -14,13 +14,6 @@ fetch("doses.json")
         console.log(medicamento);
 
 
-        // console.log("==============================");
-        // console.log("Medicamento: " + medicamento.nome);
-        // console.log("Dose/ Kilo: " + medicamento.doseKilo);
-        // console.log("Via: " + medicamento.via);
-        // console.log("Frequencia: " + medicamento.frequencia);
-        // console.log("==============================");
-        
         // FAZER INPUT NA DIV DAQUI
         // console.log("=============DADOS=============");
         // console.log(dados.medicamentos[value].via);
@@ -30,9 +23,7 @@ fetch("doses.json")
         // divVia.innerHTML = dados.medicamentos[2].frequencia;
         // divVia.innerHTML = dados.medicamento[1].nome;
                 
-        // console.log(' ========== AQUI ==========');
-        // console.log(dados.medicamentos);
-        
+
 
         // console.log(' ========== JSON convertido para ARRAY ==========');
         // let arrayMed = [];
@@ -59,6 +50,15 @@ fetch("doses.json")
     });
 
 
+    function validacao() {
+        if(document.getElementById("pesoAnimal").value ==  ""){
+            alert('Por favor, preencha o Peso do Animal');
+            document.getElementById("pesoAnimal").focus();
+            return false
+        }
+            
+    }
+
 
 // ################################################ VER LINHA 68 - Como selecionar segundo value do option
 // ###### https://pt.stackoverflow.com/questions/272220/como-armazeno-v%C3%A1rios-valores-em-cada-option-de-um-select
@@ -70,14 +70,12 @@ function optionSelecionado() {
     
     let pesoAnimal = document.getElementById('pesoAnimal').value;
     
-    // let value = 0;
     value = optionValue;
     value = value * pesoAnimal;
     
     value ? divDose.innerHTML = `${value} ml` : divDose.innerHTML = '-'
+    
 
-    
-    
     
     let optionText = select.options[select.selectedIndex].text;
     // let optionText = select.options[select.selectedIndex].getAttribute('via');
@@ -90,7 +88,10 @@ function optionSelecionado() {
     let frequencia = dadosplit[3];
     
     
-    
+    validacao();
+    // if (!pesoAnimal) {
+    //     alert("Digite o Peso do Animal");
+    // }
 
     
 
