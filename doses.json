@@ -49,7 +49,7 @@
             "via": "SC/IM"
         },
         {
-            "nome": "Convenia (Cão)",
+            "nome": "Convenia ( Cão )",
             "doseKilo": 0.1,
             "frequencia": "A CADA 15 DIAS",
             "via": "SC"
@@ -109,13 +109,13 @@
             "via": "SC/IV"
         },
         {
-            "nome": "Onda (Ampola)",
+            "nome": "Onda ( Ampola )",
             "doseKilo": 0.1,
             "frequencia": "BID/TID",
             "via": "SC/IV"
         },
         {
-            "nome": "Onda (Emedron)",
+            "nome": "Onda ( Emedron )",
             "doseKilo": 0.05,
             "frequencia": "BID/TID",
             "via": "SC/IV"
