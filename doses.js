@@ -1,6 +1,5 @@
 let divMedicamentos = document.getElementById("selectMedicamentos")
 let divDose = document.getElementById("doseKilo")
-
 let divVia = document.getElementById("via")
 let divFreq = document.getElementById("frequencia")
 
@@ -10,7 +9,8 @@ fetch("doses.json")
 .then((response) => response.json())
 .then(dados => {
     dados.medicamentos.map((medicamento) => {
-        divMedicamentos.innerHTML += `<option value="${medicamento.via, medicamento.doseKilo}"> ${medicamento.nome} - ${medicamento.doseKilo} ml/Kg - ${medicamento.via} - ${medicamento.frequencia}</option>`
+        // divMedicamentos.innerHTML += `<option value="${medicamento.via, medicamento.doseKilo}"> ${medicamento.nome} - ${medicamento.doseKilo} ml/Kg - ${medicamento.via} - ${medicamento.frequencia}</option>`
+        divMedicamentos.innerHTML += `<option value="${medicamento.nome} - ${medicamento.doseKilo} - ${medicamento.via} - ${medicamento.frequencia}"> ${medicamento.nome} ( ${medicamento.doseKilo} ml/Kg )</option>`
         console.log(medicamento);
 
 
@@ -60,76 +60,56 @@ fetch("doses.json")
     }
 
 
-// ################################################ VER LINHA 68 - Como selecionar segundo value do option
-// ###### https://pt.stackoverflow.com/questions/272220/como-armazeno-v%C3%A1rios-valores-em-cada-option-de-um-select
-
 function optionSelecionado() {
 
     let select = document.getElementById('selectMedicamentos');
     let optionValue = select.options[select.selectedIndex].value;
-    
     let pesoAnimal = document.getElementById('pesoAnimal').value;
     
-    value = optionValue;
-    value = value * pesoAnimal;
     
+    // Split
+    splitdados = optionValue.split(' - ')
+    let dose = splitdados[1];
+    
+    value = pesoAnimal * dose;
+
+    
+    // value = optionValue;
+    // value = value * pesoAnimal;
+    
+    // CONDICIONAL TERNARIO - DOM
     value ? divDose.innerHTML = `${value} ml` : divDose.innerHTML = '-'
     
 
     
-    let optionText = select.options[select.selectedIndex].text;
+
+    // RESULTADOS - Via e Frequencia
+
+    let optionText = select.options[select.selectedIndex].value;
     // let optionText = select.options[select.selectedIndex].getAttribute('via');
-    console.log("optionText = " + optionText);
+    
+    // console.log("optionText = " + optionText);
 
     // Split
     dadosplit = optionText.split(' - ')
     let via = dadosplit[2];
-    console.log(dadosplit[2]);
+    
     let frequencia = dadosplit[3];
     
+
     
-    // validacao();
+    validacao();
     // if (!pesoAnimal) {
     //     alert("Digite o Peso do Animal");
     // }
 
     
 
-    // CONDICIONAL TERNARIO
+    // CONDICIONAL TERNARIO - DOM
     via ? divVia.innerHTML = via : divVia.innerHTML = '-'; 
 
     frequencia ? divFreq.innerHTML = frequencia : divFreq.innerHTML = '-'
-    // divFreq.innerHTML = frequencia;
-
-    
-    // if (pesoAnimal) {
-    //     alert("Digite o Peso do Animal");
-    // }
-
-
-
-
-    // let via = select.options[select.selectedIndex].value;
-    // ERRO
-    // Saindo como - [object HTMLOptionElement] - Ver se tem que converter - pesquisar
-    // via = optionValue.value;
-    // console.log(via);
-    
-    // Se tirar essa linha aparece a dose
-    
-    
-    // TESTE
-    // divVia.innerHTML = via;
-    
-    
-    // divVia.innerHTML = `${via}`
-    // divVia.innerHTML = via;
-    
-    // divVia.innerHTML = `${medicamento.nome}`
-    // divVia.innerHTML += `TESTE VIA ${medicamento.nome}`
-    
     
 }
-
 
 optionSelecionado();

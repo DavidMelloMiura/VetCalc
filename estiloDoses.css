@@ -47,6 +47,23 @@ color: #0dadc5;
     color: #0dadc5;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 6vh;
+    background-color: #1a3968;
+    color: #d3d3d3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
 /*========== MOBILE ==========*/
 
 @media (max-width: 900px) {
@@ -62,8 +79,16 @@ color: #0dadc5;
     #header img {
         width: 50vw;
     }
+
+    footer {
+        background-color: transparent;
+        color: #999999;
+    }
 }
 
 
-
-
+/*
+CORES
+#0dadc5
+#1a3968
+*/
