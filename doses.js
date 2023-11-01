@@ -88,7 +88,7 @@ function optionSelecionado() {
     let frequencia = dadosplit[3];
     
     
-    validacao();
+    // validacao();
     // if (!pesoAnimal) {
     //     alert("Digite o Peso do Animal");
     // }

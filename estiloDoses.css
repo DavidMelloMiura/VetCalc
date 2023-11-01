@@ -5,6 +5,20 @@
     /* font-weight: 600; */
 /* } */
 
+#header {
+    display: flex;
+    align-items: center;
+    background-color: #e3f5f8;
+    width: 100vw;
+    height: auto;
+    padding: 0.5rem;
+}
+
+#header img {
+    width: 20vw;
+}
+
+
 .titulo {
     font-size: 2rem;
     color: #afafaf;
@@ -39,6 +53,14 @@ color: #0dadc5;
     
     .contSelect {
         width: 90vw;
+    }
+
+    #header {
+        justify-content: center;
+    }
+
+    #header img {
+        width: 50vw;
     }
 }
 
