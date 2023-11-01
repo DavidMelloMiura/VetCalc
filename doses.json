@@ -34,7 +34,7 @@
             "nome": "Ceftriaxona",
             "doseKilo": 0.25,
             "frequencia": "BID",
-            "via": "SC,"
+            "via": "SC"
         },
         {
             "nome": "Ampicilina",
@@ -97,7 +97,7 @@
             "via": "SC"
         },
         {
-            "nome": "Dmso - diluído/9 partes SF",
+            "nome": "Dmso ( Diluído/9 partes SF )",
             "doseKilo": 1,
             "frequencia": "SID",
             "via": "IV"
@@ -196,7 +196,7 @@
             "nome": "Pro Heart",
             "doseKilo": 0.05,
             "frequencia": "ANUAL",
-            "via": "SC – entre escapula"
+            "via": "SC ( Entre escapula ) "
         }
     ]
 }
