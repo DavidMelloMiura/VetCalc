@@ -50,14 +50,16 @@ fetch("doses.json")
     });
 
 
-    function validacao() {
-        if(document.getElementById("pesoAnimal").value ==  ""){
-            alert('Por favor, preencha o Peso do Animal');
-            document.getElementById("pesoAnimal").focus();
-            return false
-        }
+    // function validacao() {
+    //     if(document.getElementById("pesoAnimal").value ==  ""){
+    //         alert('Por favor, preencha o Peso do Animal');
+    //         document.getElementById("pesoAnimal").focus();
+    //         return false
+    //     }
             
-    }
+    // }
+
+    
 
 
 function optionSelecionado() {
@@ -81,6 +83,13 @@ function optionSelecionado() {
     value ? divDose.innerHTML = `${value} ml` : divDose.innerHTML = '-'
     
 
+    // Certo - só que abre quando carrega a página
+    // const peso = pesoAnimal;
+    if (pesoAnimal) {
+        console.log('OK');
+    } else {
+        abrirAlerta();
+    }
     
 
     // RESULTADOS - Via e Frequencia
@@ -98,7 +107,8 @@ function optionSelecionado() {
     
 
     
-    validacao();
+    
+    // validacao();
     // if (!pesoAnimal) {
     //     alert("Digite o Peso do Animal");
     // }
@@ -113,3 +123,16 @@ function optionSelecionado() {
 }
 
 optionSelecionado();
+
+
+
+
+
+
+function abrirAlerta() {
+    swal({
+        title: "Digite o peso do Animal!",
+        // text: "Digite o peso do Animal!",
+        icon: "warning"
+    });
+}
