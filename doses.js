@@ -9,9 +9,10 @@ fetch("doses.json")
 .then(dados => {
     dados.medicamentos.map((medicamento) => {
         
-        divMedicamentos.innerHTML += `<option value="${medicamento.nome} - ${medicamento.doseKilo} - ${medicamento.via} - ${medicamento.frequencia}"> ${medicamento.nome} ( ${medicamento.doseKilo} ml/Kg )</option>`
+        divMedicamentos.innerHTML += `<option value="${medicamento.nome} - ${medicamento.doseKilo} - ${medicamento.via} - ${medicamento.frequencia} - ${medicamento.unidade}"> ${medicamento.nome}</option>`
         // divMedicamentos.innerHTML += `<option value="${medicamento.nome} - ${medicamento.doseKilo} - ${medicamento.via} - ${medicamento.frequencia}"> ${medicamento.nome} ( ${medicamento.doseKilo[0]} - ${medicamento.doseKilo[1]} ml/Kg )</option>`
         console.log(medicamento);
+        
 
 
         // FAZER INPUT NA DIV DAQUI
@@ -72,11 +73,16 @@ function optionSelecionado() {
     // Split
     splitdados = optionValue.split(' - ')
     let dose = splitdados[1];
+    let unidade = splitdados[4];
+
+
+    console.log("---------- TESTE UNIDADE ----------");
+    console.log(unidade);
     
     value = pesoAnimal * dose;
 
 
-    let doses = dose.split(',')
+    let doses = dose.split(',');
     let min = doses[0] * pesoAnimal;
     let max = doses[1] * pesoAnimal;
         
@@ -84,7 +90,7 @@ function optionSelecionado() {
     // value = value * pesoAnimal;
     
     // CONDICIONAL TERNARIO - DOM
-    isNaN(max) ? divDose.innerHTML = `${min} ml` : divDose.innerHTML = `${min} ml - ${max} ml`;
+    isNaN(max) ? divDose.innerHTML = `${min} ${unidade}` : divDose.innerHTML = `${min} - ${max} ${unidade}`;
 
     // console.log('MIN: '+ isNaN(min));
     // console.log('MAX: '+ isNaN(max));

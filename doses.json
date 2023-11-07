@@ -4,199 +4,232 @@
             "nome": "Shotapen",
             "doseKilo": 0.1,
             "frequencia": "E.D.A",
-            "via": "SC/IM"
+            "via": "SC/IM",
+            "unidade": "ml"
         },
         {
             "nome": "Agemoxi",
             "doseKilo": [0.05, 0.13],
             "frequencia": "E.D.A",
-            "via": "SC/IM"
+            "via": "SC/IM",
+            "unidade": "ml"
         },
         {
             "nome": "Metronidazol",
             "doseKilo": 3,
             "frequencia": "BID",
-            "via": "IV"
+            "via": "IV",
+            "unidade": "ml"
         },
         {
             "nome": "Trissulfin",
             "doseKilo": [0.075, 0.15],
             "frequencia": "BID/SID",
-            "via": "SC/IM"
+            "via": "SC/IM",
+            "unidade": "ml"
         },
         {
             "nome": "Enrofloxacino",
             "doseKilo": 0.05,
             "frequencia": "SID",
-            "via": "SC"
+            "via": "SC",
+            "unidade": "ml"
         },
         {
             "nome": "Ceftriaxona",
             "doseKilo": [0.25, 0.5],
             "frequencia": "BID",
-            "via": "SC"
+            "via": "SC",
+            "unidade": "ml"
         },
         {
             "nome": "Ampicilina",
             "doseKilo": 0.1,
             "frequencia": "BID",
-            "via": "IV"
+            "via": "IV",
+            "unidade": "ml"
         },
         {
             "nome": "Amoxicilina + clav.",
             "doseKilo": 0.05,
             "frequencia": "SID",
-            "via": "SC/IM"
+            "via": "SC/IM",
+            "unidade": "ml"
         },
         {
             "nome": "Convenia ( Cão )",
             "doseKilo": 0.1,
             "frequencia": "A CADA 15 DIAS",
-            "via": "SC"
+            "via": "SC",
+            "unidade": "ml"
         },
         {
             "nome": "Buscofin",
             "doseKilo": 0.05,
             "frequencia": "BID/TID",
-            "via": "SC/IV"
+            "via": "SC/IV",
+            "unidade": "ml"
         },
         {
             "nome": "Dipirona",
             "doseKilo": 0.05,
             "frequencia": "BID/TID",
-            "via": "SC/IV"
+            "via": "SC/IV",
+            "unidade": "ml"
         },
         {
             "nome": "Tramal",
             "doseKilo": [0.04, 0.08],
             "frequencia": "BID/TID",
-            "via": "SC/IM/IV"
+            "via": "SC/IM/IV",
+            "unidade": "ml"
         },
         {
             "nome": "Morfina",
             "doseKilo": [0.01, 0.1],
             "frequencia": "BID/TID",
-            "via": "SC/IM"
+            "via": "SC/IM",
+            "unidade": "ml"
         },
         {
             "nome": "Dexa",
             "doseKilo": [0.035, 0.12],
             "frequencia": "SID",
-            "via": "SC/IM/IV"
+            "via": "SC/IM/IV",
+            "unidade": "ml"
         },
         {
             "nome": "Maxicam",
             "doseKilo": [0.05, 0.1],
             "frequencia": "SID",
-            "via": "SC/IM"
+            "via": "SC/IM",
+            "unidade": "ml"
         },
         {
             "nome": "Rimadyl",
             "doseKilo": [0.04, 0.08],
             "frequencia": "SID",
-            "via": "SC"
+            "via": "SC",
+            "unidade": "ml"
         },
         {
             "nome": "Dmso ( Diluído/9 partes SF )",
             "doseKilo": 1,
             "frequencia": "SID",
-            "via": "IV"
+            "via": "IV",
+            "unidade": "ml"
         },
         {
             "nome": "Cerenia",
             "doseKilo": 0.1,
             "frequencia": "SID/BID",
-            "via": "SC/IV"
+            "via": "SC/IV",
+            "unidade": "ml"
         },
         {
             "nome": "Onda ( Ampola )",
             "doseKilo": 0.1,
             "frequencia": "BID/TID",
-            "via": "SC/IV"
+            "via": "SC/IV",
+            "unidade": "ml"
         },
         {
             "nome": "Onda ( Emedron )",
             "doseKilo": 0.05,
             "frequencia": "BID/TID",
-            "via": "SC/IV"
+            "via": "SC/IV",
+            "unidade": "ml"
         },
         {
             "nome": "Omeprazol",
             "doseKilo": 0.25,
             "frequencia": "SID",
-            "via": "IV"
+            "via": "IV",
+            "unidade": "ml"
         },
         {
             "nome": "Acetilcisteína",
             "doseKilo": [0.1, 0.4],
             "frequencia": "BID",
-            "via": "SC/IV"
+            "via": "SC/IV",
+            "unidade": "ml"
         },
         {
             "nome": "Transamin",
             "doseKilo": [0.25, 0.5],
             "frequencia": "BID/QID",
-            "via": "IV - LENTO"
+            "via": "IV - LENTO",
+            "unidade": "ml"
         },
         {
             "nome": "Gardenal",
             "doseKilo": [0.02, 0.06],
             "frequencia": "BID",
-            "via": "IV/IM"
+            "via": "IV/IM",
+            "unidade": "ml"
         },
         {
             "nome": "Diazepan",
             "doseKilo": [0.1, 0.8],
             "frequencia": "-",
-            "via": "IV/IM"
+            "via": "IV/IM",
+            "unidade": "ml"
         },
         {
             "nome": "Prometazina",
             "doseKilo": 0.016,
             "frequencia": "SID",
-            "via": "IM"
+            "via": "IM",
+            "unidade": "ml"
         },
         {
             "nome": "Adrenalina",
             "doseKilo": [0.1, 0.2],
             "frequencia": "-",
-            "via": "SC/IM/IV/IC"
+            "via": "SC/IM/IV/IC",
+            "unidade": "ml"
         },
         {
             "nome": "Atropina 0.5 Intox",
             "doseKilo": [0.5, 0.4],
             "frequencia": "-",
-            "via": "SC/IM/IV"
+            "via": "SC/IM/IV",
+            "unidade": "ml"
         },
         {
             "nome": "Furosemida",
             "doseKilo": [0.2, 0.6],
             "frequencia": "BID/TID",
-            "via": "SC/IM/IV"
+            "via": "SC/IM/IV",
+            "unidade": "ml"
         },
         {
             "nome": "Vitamina A",
             "doseKilo": [1, 2],
             "frequencia": "SID/BID",
-            "via": "IM"
+            "via": "IM",
+            "unidade": "ml ( por animal )"
         },
         {
             "nome": "Vitamina K",
             "doseKilo": [1, 5],
             "frequencia": "DOSE UNICA",
-            "via": "IM/IV"
+            "via": "IM/IV",
+            "unidade": "ml ( por animal )"
         },
         {
             "nome": "B12",
             "doseKilo": [0.5, 1],
             "frequencia": "SID/BID",
-            "via": "SC/IM/IV"
+            "via": "SC/IM/IV",
+            "unidade": "ml ( por animal )"
         },
         {
             "nome": "Pro Heart",
             "doseKilo": 0.05,
             "frequencia": "ANUAL",
-            "via": "SC ( Entre escapula ) "
+            "via": "SC ( Entre escapula ) ",
+            "unidade": "ml"
         }
     ]
 }
