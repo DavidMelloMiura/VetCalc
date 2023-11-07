@@ -4,13 +4,13 @@ let divVia = document.getElementById("via")
 let divFreq = document.getElementById("frequencia")
 
 
-
 fetch("doses.json")
 .then((response) => response.json())
 .then(dados => {
     dados.medicamentos.map((medicamento) => {
-        // divMedicamentos.innerHTML += `<option value="${medicamento.via, medicamento.doseKilo}"> ${medicamento.nome} - ${medicamento.doseKilo} ml/Kg - ${medicamento.via} - ${medicamento.frequencia}</option>`
+        
         divMedicamentos.innerHTML += `<option value="${medicamento.nome} - ${medicamento.doseKilo} - ${medicamento.via} - ${medicamento.frequencia}"> ${medicamento.nome} ( ${medicamento.doseKilo} ml/Kg )</option>`
+        // divMedicamentos.innerHTML += `<option value="${medicamento.nome} - ${medicamento.doseKilo} - ${medicamento.via} - ${medicamento.frequencia}"> ${medicamento.nome} ( ${medicamento.doseKilo[0]} - ${medicamento.doseKilo[1]} ml/Kg )</option>`
         console.log(medicamento);
 
 
@@ -75,12 +75,19 @@ function optionSelecionado() {
     
     value = pesoAnimal * dose;
 
-    
+
+    let doses = dose.split(',')
+    let min = doses[0] * pesoAnimal;
+    let max = doses[1] * pesoAnimal;
+        
     // value = optionValue;
     // value = value * pesoAnimal;
     
     // CONDICIONAL TERNARIO - DOM
-    value ? divDose.innerHTML = `${value} ml` : divDose.innerHTML = '-'
+    isNaN(max) ? divDose.innerHTML = `${min} ml` : divDose.innerHTML = `${min} ml - ${max} ml`;
+
+    // console.log('MIN: '+ isNaN(min));
+    // console.log('MAX: '+ isNaN(max));
     
 
     // Certo - só que abre quando carrega a página
@@ -123,8 +130,6 @@ function optionSelecionado() {
 }
 
 optionSelecionado();
-
-
 
 
 

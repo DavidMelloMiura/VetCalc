@@ -8,7 +8,7 @@
         },
         {
             "nome": "Agemoxi",
-            "doseKilo": 0.05,
+            "doseKilo": [0.05, 0.13],
             "frequencia": "E.D.A",
             "via": "SC/IM"
         },
@@ -20,7 +20,7 @@
         },
         {
             "nome": "Trissulfin",
-            "doseKilo": 0.15,
+            "doseKilo": [0.075, 0.15],
             "frequencia": "BID/SID",
             "via": "SC/IM"
         },
@@ -32,7 +32,7 @@
         },
         {
             "nome": "Ceftriaxona",
-            "doseKilo": 0.25,
+            "doseKilo": [0.25, 0.5],
             "frequencia": "BID",
             "via": "SC"
         },
@@ -68,31 +68,31 @@
         },
         {
             "nome": "Tramal",
-            "doseKilo": 0.04,
+            "doseKilo": [0.04, 0.08],
             "frequencia": "BID/TID",
             "via": "SC/IM/IV"
         },
         {
             "nome": "Morfina",
-            "doseKilo": 0.01,
+            "doseKilo": [0.01, 0.1],
             "frequencia": "BID/TID",
             "via": "SC/IM"
         },
         {
             "nome": "Dexa",
-            "doseKilo": 0.035,
+            "doseKilo": [0.035, 0.12],
             "frequencia": "SID",
             "via": "SC/IM/IV"
         },
         {
             "nome": "Maxicam",
-            "doseKilo": 0.05,
+            "doseKilo": [0.05, 0.1],
             "frequencia": "SID",
             "via": "SC/IM"
         },
         {
             "nome": "Rimadyl",
-            "doseKilo": 0.04,
+            "doseKilo": [0.04, 0.08],
             "frequencia": "SID",
             "via": "SC"
         },
@@ -128,25 +128,25 @@
         },
         {
             "nome": "Acetilcisteína",
-            "doseKilo": 0.1,
+            "doseKilo": [0.1, 0.4],
             "frequencia": "BID",
             "via": "SC/IV"
         },
         {
             "nome": "Transamin",
-            "doseKilo": 0.25,
+            "doseKilo": [0.25, 0.5],
             "frequencia": "BID/QID",
             "via": "IV - LENTO"
         },
         {
             "nome": "Gardenal",
-            "doseKilo": 0.02,
+            "doseKilo": [0.02, 0.06],
             "frequencia": "BID",
             "via": "IV/IM"
         },
         {
             "nome": "Diazepan",
-            "doseKilo": 0.1,
+            "doseKilo": [0.1, 0.8],
             "frequencia": "-",
             "via": "IV/IM"
         },
@@ -158,37 +158,37 @@
         },
         {
             "nome": "Adrenalina",
-            "doseKilo": 0.1,
+            "doseKilo": [0.1, 0.2],
             "frequencia": "-",
             "via": "SC/IM/IV/IC"
         },
         {
             "nome": "Atropina 0.5 Intox",
-            "doseKilo": 0.5,
+            "doseKilo": [0.5, 0.4],
             "frequencia": "-",
             "via": "SC/IM/IV"
         },
         {
             "nome": "Furosemida",
-            "doseKilo": 0.2,
+            "doseKilo": [0.2, 0.6],
             "frequencia": "BID/TID",
             "via": "SC/IM/IV"
         },
         {
             "nome": "Vitamina A",
-            "doseKilo": 1,
+            "doseKilo": [1, 2],
             "frequencia": "SID/BID",
             "via": "IM"
         },
         {
             "nome": "Vitamina K",
-            "doseKilo": 1,
+            "doseKilo": [1, 5],
             "frequencia": "DOSE UNICA",
             "via": "IM/IV"
         },
         {
             "nome": "B12",
-            "doseKilo": 0.5,
+            "doseKilo": [0.5, 1],
             "frequencia": "SID/BID",
             "via": "SC/IM/IV"
         },
