@@ -6,7 +6,7 @@
 /* } */
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .alert {
@@ -84,6 +84,11 @@ body {
     padding: 0.5rem;
 }
 
+#header h2 {
+    display: flex;
+    margin-left: 17vw;
+}
+
 #header img {
     width: 20vw;
 }
@@ -95,10 +100,15 @@ body {
     margin-top: 1rem;
 }
 
+.tituloPagina {
+    font-size: 1.5rem;
+}
+
 h2 {
 color: #0dadc5;
 font-family: "Montserrat Alternates", sans-serif;
 font-weight: bolder;
+margin-top: 2rem;
 }
 
 .content {

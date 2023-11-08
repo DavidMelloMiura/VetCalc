@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estiloDoses.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <!-- ALERT - PERSONALIZADO-->
+    <!-- <div id="alerta" class="alerta hide">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="msg">Aviso: Digite o Peso do Animal!</span>
+        <span class="close-btn" onclick="alerta()">
+            <span class="fas fa-times"></span>
+        </span>
+    </div> -->
+
+    <div id="header">
+        <img src="img/Logo_hz.svg" id="logo" alt="caroline-medica-veterinaria">
+        <h2>Sistema Veterinária</h2>
+    </div>
+
+
+    <div class="content">
+        
+        <!-- <button class="btn btn-warning mt-3" onclick="callAlert('Hello')">Call Alert</button> -->
+        <!-- <button class="btn btn-warning mt-3" onclick="abrirAlerta()">Call Alert</button> -->
+
+
+        <h2 class="tituloPagina">Calculo de Dose</h2>
+
+        <div class="contSelect m-3">
+            <input type="text" class="form-control mb-3" id="pesoAnimal" placeholder="Peso do Animal" value = ''> <!--value = ''-->
+            <!-- TIRAR o value - Está como MOCK para teste apenas -->
+
+            <select class="form-select" name="selectMedicamentos" id="selectMedicamentos"
+                onchange="optionSelecionado()">
+                <option value=0>Selecione</option>
+            </select>
+        </div>
+
+
+        <div class="titulo">Dose</div class="titulo">
+        <div class="result" id="doseKilo"></div>
+
+        <div class="titulo">VIA</div class="titulo">
+        <div class="result" id="via"></div>
+
+        <div class="titulo">FREQUÊNCIA</div class="titulo">
+        <div class="result" id="frequencia"></div>
+
+        <div id="lista"></div>
+
+
+
+
+    </div>
+    <script src="doses.js"></script>
+
+    <!-- TESTE Alert Custom -->
+
+    <!-- <script src="alertCustom.js"></script>
+
+<script>
+    function callAlert(msg) {
+        alert(msg);
+    }
+</script> -->
+
+    <script>
+        function abrirAlerta() {
+            swal({
+                title: "Digite o peso do Animal!",
+                // text: "Digite o peso do Animal!",
+                icon: "warning"
+            });
+        }
+    </script>
+
+
+
+    <footer>[{ Developer - David Miura }]</Developer></footer>
+</body>
+
+</html>

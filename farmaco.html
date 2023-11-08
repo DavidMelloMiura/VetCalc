@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmaco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estiloFarmaco.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+
+    <div id="header">
+        <img src="img/Logo_hz.svg" id="logo" alt="caroline-medica-veterinaria">
+        <h2>Sistema Veterinária</h2>
+    </div>
+
+    <h2 class="text-center tituloPagina">Calculo de Farmaco</h2>
+
+    <input type="text" class="form-control mb-3" id="pesoAnimal" placeholder="Peso do Animal" value=6>
+    <!--value='' COLOCAR VALUES ASSIM-->
+
+
+    <div class="content">
+
+        <!-- LIQUIDO -->
+        <div id="farmacoLiquido">
+            <h3>Dosagem Líquida</h3>
+            <div class="contSelect m-3">
+                <input type="text" class="form-control mb-3" id="concentracaoLiquida"
+                    placeholder="Concentração em ml / mg" value=''>
+                <button class="btn btn-primary" onclick="calculoLiquido()">Calcular</button>
+            </div>
+            <div class="titulo">Dose</div class="titulo">
+            <div class="result" id="doseLiquida">-</div>
+        </div>
+
+
+        <!-- COMPRIMIDO -->
+        <div id="farmacoComprimido">
+            <h3>Comprimido</h3>
+            <div class="contSelect m-3">
+                <input type="text" class="form-control mb-3" id="doseKilo" placeholder="Dose / Kg em mg" value=0.5>
+
+                <input type="text" class="form-control mb-3" id="concentracaoComprimido"
+                    placeholder="Concentração mg / Kg" value=12>
+                <button class="btn btn-primary" onclick="calculoComprimido()">Calcular</button>
+            </div>
+
+                <div class="titulo">Dose</div class="titulo">
+                    
+                <div class="result" id="doseComprimido"></div>
+                <div class="result" id="fracao"></div>
+            
+        </div>
+
+    </div>
+
+   
+
+    <footer>[{ Developer - David Miura }]</Developer>
+    </footer>
+    <script src="farmaco.js"></script>
+</body>
+
+</html>
