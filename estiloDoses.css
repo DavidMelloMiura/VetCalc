@@ -162,6 +162,10 @@ footer {
         width: 50vw;
     }
 
+    #sistemaVeterinaria {
+        font-size: 1rem;
+    }
+
     footer {
         background-color: transparent;
         color: #999999;

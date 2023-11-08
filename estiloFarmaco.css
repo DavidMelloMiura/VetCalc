@@ -179,8 +179,6 @@ footer {
 
 @media (max-width: 900px) {
 
-   
-
     .content {
         display: flex;
         justify-content: center;
@@ -202,9 +200,18 @@ footer {
         width: 50vw;
     }
 
+    #sistemaVeterinaria {
+        font-size: 1rem;
+    }
+
+    #pesoAnimal {
+        width: 70vw;
+    }
+
     footer {
         background-color: transparent;
         color: #999999;
+        margin-top: 1rem;
     }
 }
 
