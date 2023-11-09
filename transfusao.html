@@ -8,7 +8,7 @@
     <title>Doses</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="estiloDoses.css">
+    <link rel="stylesheet" href="estiloTransfusao.css">
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
@@ -32,9 +32,62 @@
     <div class="content">
         
         
-        <h2 class="tituloPagina">Calculo de Transfusão Sanguínea</h2>
+        <h2 class="tituloPagina">Calculo de Transfusão</h2>
 
         <div class="contSelect m-3">
+            <div class="form">
+                <input class="form-control mb-3" type="text" name="Tpeso" id="Tpeso" placeholder="Peso em Kg">
+        
+                <p>Volume Total</p>
+                
+                <div class="VolTot">
+                    <label for="oito" class="radioLabel">
+                        <input type="radio" value="8" class="radio" name="VolTot" id="oito">
+                        <div class="spaceradio"></div>
+                        8%
+                    </label>
+        
+                    <label for="dez" class="radioLabel">
+                        <input type="radio" value="10" class="radio" name="VolTot" id="dez">
+                        <div class="spaceradio"><!-- Virtual element --></div>
+                        10%    
+                        <div class="resultVolume" id="txtSangue">-</div>
+                    </label>
+                </div>
+        
+                <p>Volume a ser Extraido</p>
+        
+                <div class="VolExt">
+                    <label for="vinte" class="radioLabel">
+                        <input type="radio" value="20" class="radio" name="VolExt" id="vinte">
+                        <div class="spaceradio"></div>
+                        20%
+                    </label>
+        
+                    <label for="vintecinco" class="radioLabel">
+                        <input type="radio" value="25" class="radio" name="VolExt" id="vintecinco">
+                        <div class="spaceradio"><!-- Virtual element --></div>
+                        25%
+                        <div class="resultVolume" id="txtDoaSangue">-</div>    
+                    </label>
+                </div>
+        
+                <button class="btn btn-primary mt-3" onclick="calcular()">Calcular</button>
+                
+            </div>
+
+            
+                <h2 class="titulo">Coletagem Máxima</h2>
+                <div class="result" id="result">-</div> 
+                
+                    
+        
+                <!-- <p>TESTE DE CONVERSÃO</p>
+                <div id="testando">-</div> -->
+                
+        
+                
+
             
         </div>
 
@@ -45,7 +98,7 @@
 
 
     </div>
-    <script src="doses.js"></script>
+    <script src="transfusao.js"></script>
 
     <!-- TESTE Alert Custom -->
 

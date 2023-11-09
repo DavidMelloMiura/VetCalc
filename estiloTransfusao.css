@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&family=Montserrat:wght@100&display=swap");
+
+/* * { */
+/* font-family: "Montserrat Alternates", sans-serif; */
+/* font-weight: 600; */
+/* } */
+
+body {
+    overflow-x: hidden;
+    background-color: #fafafa;
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    background-color: #e3f5f8;
+    width: 100vw;
+    height: auto;
+    padding: 0.5rem;
+}
+
+#header h2 {
+    display: flex;
+    margin-left: 17vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#header img {
+    width: 20vw;
+}
+
+
+.titulo {
+    font-size: 1.7rem;
+    color: #afafaf;
+    margin-top: 2rem;
+}
+
+.tituloPagina {
+    font-size: 1.5rem;
+}
+
+h2 {
+    color: #0dadc5;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35vw;
+    height: 35vw;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.7rem;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+
+.radioLabel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 15px;    
+}
+
+.radio {
+    display: none;
+}
+
+.spaceradio {
+    width: 1.3em;
+    height: 1.3em;
+    border: 2px solid #0dadc5;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.spaceradio::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #0dadc5;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.25s;
+}
+
+.radio:checked + .spaceradio::after{
+    transform: scale(1);
+}
+
+
+.resultVolume {
+    display: flex;
+    align-self: flex-end;
+    font-size: 1.3rem;
+    color: #0dadc5;
+    margin-left: 50px;
+}
+
+.result {
+    font-size: 2rem;
+    color: #0dadc5;
+}
+
+
+.icons {
+    width: 1.5rem;
+    background-color: white;
+    margin-left: -5px;
+    padding: 3px 3px;
+    border-radius: 0.25rem;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+}
+
+.contSelect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 6vh;
+    background-color: #1a3968;
+    color: #d3d3d3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
+/*========== MOBILE ==========*/
+
+@media (max-width: 900px) {
+
+    .conteudo {
+        width: 90vw;
+        height: auto;
+        padding: 2rem 0rem;
+    }
+
+    .content {
+        width: 100vw;
+        height: 70vh;
+        
+    }
+
+    .contSelect {
+        width: 90vw;
+    }
+
+    #header {
+        justify-content: center;
+    }
+
+    #header img {
+        width: 35vw;
+        padding: 0.6rem 0rem;
+    }
+    
+    #sistemaVeterinaria {
+        font-size: 1rem;
+    }
+
+    #Tpeso {
+        width: 90vw;
+    }
+
+
+    button p {
+        font-size: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+
+    footer {
+        background-color: transparent;
+        color: #999999;
+    }
+}
+
+
+/*
+CORES
+#0dadc5
+#1a3968
+*/
