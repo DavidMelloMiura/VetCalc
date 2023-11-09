@@ -87,6 +87,10 @@ body {
 #header h2 {
     display: flex;
     margin-left: 17vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #header img {
@@ -159,7 +163,7 @@ footer {
     }
 
     #header img {
-        width: 50vw;
+        width: 35vw;
     }
 
     #sistemaVeterinaria {
