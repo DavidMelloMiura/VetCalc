@@ -20,6 +20,7 @@ function calculoComprimido() {
     let dose = (peso * doseKilo) / concentracaoComprimido;
 
     doseComprimido.innerHTML = `${dose} mg`;
+    
 
 
     // FRACAO

@@ -7,6 +7,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: #fafafa;
 }
 
 
@@ -144,7 +145,7 @@ footer {
     .content {
         width: 100vw;
         height: 70vh;
-        background-color: #fafafa;
+        
     }
 
     .contSelect {
