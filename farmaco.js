@@ -9,6 +9,7 @@ function calculoLiquido() {
     doseLiquida.innerHTML = `${resLiquida} ml`;
 }
 
+
 function calculoComprimido() {
     let peso = document.getElementById('pesoAnimal').value
 
@@ -20,44 +21,48 @@ function calculoComprimido() {
     let dose = (peso * doseKilo) / concentracaoComprimido;
 
     doseComprimido.innerHTML = `${dose} mg`;
+
+
+    // DECIMAL EM FRAÇÃO ==================================================
+    let doseString = dose.toString();
+    // let doseString = '0.18';
+
+    let partes = doseString.split('.');
     
-
-
-    // FRACAO
-    let partes = dose.toString();
-    const dados = partes.split('.');
-
-    let numerador = dados[1];
-    let multDez = dados[1].length;
+    let numerador = parseFloat(doseString.replace('.', ''));
+    
+    let multDez = partes[1].length;
     let denominador = Math.pow(10, multDez);
 
-    function mdc(num, den) {
-        let resto;
-        do {
-            resto = num % den;
 
-            num = den;
-            den = resto;
-        } while (resto != 0);
-        return num + den;
+    console.log('----- TESTE - DECIMO EM FRACAO ----- ');
+    console.log('NUMERADOR: ' + numerador);
+    console.log('DENOMINADOR: ' + denominador);
+    console.log('------------------- ');
+
+
+
+    // SIMPLIFICAR EM FRAÇÃO ==================================================
+    for (var i = Math.max(numerador, denominador); i > 1; i--) {
+        if ((numerador % i == 0) && (denominador % i == 0)) {
+            numerador /= i;
+            denominador /= i;
+        }
     }
 
-    let nume = numerador / mdc(numerador, denominador);
-    let deno = denominador / mdc(numerador, denominador);
-
-    fracao.innerHTML = `${nume} / ${deno} do comprimido`
-
-
-    console.log("------- MDC -------");
-    console.log(mdc(numerador, denominador));
-    console.log('--------------------');
-
-    
 
 
 
-   
 
+
+    console.log('========== SIMPLIFICADO ==========');
+    console.log('NUMERADOR:   ' + numerador);
+    console.log('DENOMINADOR: ' + denominador);
+
+
+
+
+    fracao.innerHTML = `${numerador} / ${denominador} do comprimido`
 
 }
 
@@ -92,9 +97,3 @@ function calculoComprimido() {
  * 6 * 0.5 / 5 = 0.6 mg
  * 
  */
-
-
-
-
-
-
