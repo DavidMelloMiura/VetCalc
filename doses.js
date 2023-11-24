@@ -9,7 +9,7 @@ fetch("doses.json")
 .then(dados => {
     dados.medicamentos.map((medicamento) => {
         
-        divMedicamentos.innerHTML += `<option value="${medicamento.nome} - ${medicamento.doseKilo} - ${medicamento.via} - ${medicamento.frequencia} - ${medicamento.unidade}"> ${medicamento.nome}</option>`
+        divMedicamentos.innerHTML += `<option value="${medicamento.nome} - ${medicamento.doseKilo} - ${medicamento.via} - ${medicamento.frequencia} - ${medicamento.unidade}"> ${medicamento.nome} - ${medicamento.doseKilo} / kg</option>`
         // divMedicamentos.innerHTML += `<option value="${medicamento.nome} - ${medicamento.doseKilo} - ${medicamento.via} - ${medicamento.frequencia}"> ${medicamento.nome} ( ${medicamento.doseKilo[0]} - ${medicamento.doseKilo[1]} ml/Kg )</option>`
         console.log(medicamento);
         

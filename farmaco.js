@@ -117,9 +117,3 @@ fracao.innerHTML = `${numerador} / ${denominador} do comprimido`
  */
 
 
-
-/*
-Calcular a quantidade de comprimidos
-
-
-*/

@@ -31,6 +31,7 @@ body {
 
 #header img {
     width: 20vw;
+    cursor: pointer;
 }
 
 
@@ -49,6 +50,14 @@ h2 {
     color: #0dadc5;
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: bolder;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 .conteudo {
@@ -71,10 +80,10 @@ button {
     font-size: 1rem;
     letter-spacing: 0.05rem;
     color: white;
-    width: 15rem;
+    width: 20rem;
+    height: 3rem;
     border-radius: 0.3rem;
     border-style: none;
-    height: 2rem;
     margin: 0.35rem;
     cursor: pointer;
     transition: 0.2s;
@@ -96,11 +105,12 @@ button:hover {
 
 
 .icons {
-    width: 1.5rem;
+    width: 2.7rem;
     background-color: white;
-    margin-left: -5px;
+    margin-left: -2px;
     padding: 3px 3px;
     border-radius: 0.25rem;
+    height: auto;
 }
 
 
