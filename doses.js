@@ -90,7 +90,7 @@ function optionSelecionado() {
     // value = value * pesoAnimal;
     
     // CONDICIONAL TERNARIO - DOM
-    isNaN(max) ? divDose.innerHTML = `${min} ${unidade}` : divDose.innerHTML = `${min} - ${max} ${unidade}`;
+    isNaN(max) ? divDose.innerHTML = `${min} ${unidade}` : divDose.innerHTML = `${min.toFixed(3)} - ${max.toFixed(3)} ${unidade}`;
 
     // console.log('MIN: '+ isNaN(min));
     // console.log('MAX: '+ isNaN(max));

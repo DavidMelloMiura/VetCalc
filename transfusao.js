@@ -14,10 +14,8 @@ function calcular() {
     doaSangueEnd = (totSangue / 100) * ve
 
 
-   txtSangue.innerHTML = totSangue + " ml"
-   txtDoaSangue.innerHTML = doaSangue + " ml"
-   result.innerHTML = doaSangueEnd + " ml"
-
+   txtSangue.innerHTML = totSangue.toFixed(3) + " ml"
+   txtDoaSangue.innerHTML = doaSangue.toFixed(3) + " ml"
+   result.innerHTML = doaSangueEnd.toFixed(3) + " ml"
    
-    
 }
